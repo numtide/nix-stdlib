@@ -1,0 +1,4 @@
+{ ... }:
+{
+  isType = builtins.isNull;
+}

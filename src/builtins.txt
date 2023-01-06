@@ -1,0 +1,29 @@
+
+nix-repl> map (x: builtins.trace x x) (builtins.attrNames builtins)
+
+# Remaining builtins
+trace: abort
+trace: addErrorContext
+trace: appendContext
+trace: deepSeq
+trace: derivation
+trace: derivationStrict
+trace: genericClosure
+trace: getContext
+trace: hasContext
+trace: parseDrvName
+trace: partition
+trace: placeholder
+trace: scopedImport
+trace: seq
+trace: splitVersion
+trace: throw
+trace: toXML
+trace: trace
+trace: tryEval
+trace: typeOf
+trace: unsafeDiscardOutputDependency
+trace: unsafeDiscardStringContext
+trace: unsafeGetAttrPos
+trace: valueSize
+
