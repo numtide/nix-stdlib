@@ -10,7 +10,7 @@ rec {
   ];
 
   # creates a generator for the given systems
-  mkForAll = systems: f: attrs.gen systmes f;
+  mkForAll = systems: f: attrs.gen systems f;
 
   # a generator for all the default systems
   defaultForAll = mkForAll default;

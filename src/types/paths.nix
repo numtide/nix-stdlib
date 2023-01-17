@@ -47,7 +47,7 @@
         let
           path_ = toString f;
         in
-        if isFunction f then f
+        if lambdas.isType f then f
         else
           (path: type: path_ == toString path);
 

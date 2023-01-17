@@ -8,8 +8,8 @@ let
     asserts = import ./asserts.nix stdlib;
     fetchers = import ./fetchers.nix stdlib;
     formats = import ./formats stdlib;
-    
-    impure = import ./impure stdlib;
+
+    impure = import ./impure.nix stdlib;
     nix = import ./nix.nix;
     systems = import ./systems.nix stdlib;
     versions = import ./versions.nix stdlib;

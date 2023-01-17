@@ -1,9 +1,9 @@
 { ... }:
-{
+rec {
   isType = builtins.isInt;
 
   even = a: (mod a 2) == 0;
-  odd = a: (mode a 2) != 0;
+  odd = a: (mod a 2) != 0;
 
   lessThan = builtins.lessThan;
 
