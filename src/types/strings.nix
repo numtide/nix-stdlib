@@ -1,4 +1,4 @@
-{ ... }:
+{ lists, ... }:
 rec {
   isType = builtins.isString;
   toType = builtins.toString;
@@ -8,10 +8,7 @@ rec {
   append = a: b: a + b;
 
   # [string] -> string
-  concat = concatSep "";
-
-  # string -> [string] -> string
-  concatSep = builtins.concatStringsSep;
+  concat = lists.join "";
 
   #
   length = builtins.stringLength;

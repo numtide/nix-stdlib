@@ -22,6 +22,9 @@ rec {
   # [[a]] -> [a]
   concat = builtins.concatLists;
 
+  # [a] -> str -> str
+  join = builtins.concatStringsSet;
+
   concatMap = builtins.concatMap;
 
   optional = cond: x: if cond then x else empty;
